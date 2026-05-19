@@ -17,7 +17,7 @@
             <Font name="Kristen ITC" size="32.0" />
          </font>
       </Label>
-      <Button fx:id="addBtn" layoutX="389.0" layoutY="161.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="122.0" text="Add">
+      <Button fx:id="addBtn" layoutX="389.0" layoutY="161.0" mnemonicParsing="false" onAction="#addTask" prefHeight="26.0" prefWidth="122.0" text="Add">
          <font>
             <Font name="Kristen ITC" size="12.0" />
          </font>
@@ -27,11 +27,11 @@
             <Font name="Kristen ITC" size="12.0" />
          </font>
       </TextField>
-      <TableView layoutX="49.0" layoutY="326.0" prefHeight="200.0" prefWidth="507.0">
+      <TableView fx:id="todoTable" layoutX="49.0" layoutY="326.0" prefHeight="200.0" prefWidth="507.0">
         <columns>
-          <TableColumn prefWidth="232.79998779296875" text="Task" />
-          <TableColumn prefWidth="131.20001220703125" text="Due Date" />
-            <TableColumn prefWidth="109.5999755859375" text="Priority" />
+          <TableColumn fx:id="tableTask" prefWidth="232.79998779296875" text="Task" />
+          <TableColumn fx:id="tableDueDate" prefWidth="131.20001220703125" text="Due Date" />
+            <TableColumn fx:id="tablePriority" prefWidth="109.5999755859375" text="Priority" />
         </columns>
       </TableView>
       <TextField fx:id="dueDate" layoutX="56.0" layoutY="188.0" prefHeight="27.0" prefWidth="133.0" promptText="Due Date">
